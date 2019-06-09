@@ -1,5 +1,5 @@
 [Variables]
-LabelYMax=50
+LabelYMax=30
 LabelHeight=80
 LabelOffset=2
 @IncludeBackground=Background.inc

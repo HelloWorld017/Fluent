@@ -18,13 +18,13 @@ Path=0,0 | LineTo #Width#,0 | LineTo #Width#,#Height# | LineTo 0,#Height# | Clos
 Meter=Shape
 X=0
 Y=#LabelY#
-Shape=Path Path | Fill Color #ThemeColor# | StrokeWidth 0
+Shape=Path Path | Fill Color #LabelColor# | StrokeWidth 0
 Path = 0,0 | LineTo #LabelHeight#,0 | LineTo #LabelHeight#,#LabelHeight# | LineTo 0,#LabelHeight# | ClosePath 1
 
 [MeterIcon]
 Meter=String
 FontFace=#IconFont#
-FontColor=#TextColor#
+FontColor=#IconColor#
 FontSize=30
 StringAlign=CenterCenter
 AntiAlias=1

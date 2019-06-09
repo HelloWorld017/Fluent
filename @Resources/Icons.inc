@@ -5,14 +5,11 @@ IconCore=[\xfb1f]
 ;mdi-clock
 IconClock=[\xf953]
 
-;mdi-calendar
-IconDate=[\xf0ed]
-
 ;mdi-harddisk
 IconDrive=[\xf2ca]
 
-;mdi-memory
-IconGraphic=[\xf35b]
+;mdi-texture
+IconGraphic=[\xf50c]
 
 ;mdi-package-variant
 IconMemory=[\f3d6]
@@ -36,14 +33,17 @@ IconUptime=[\xf51b]
 ;mdi-clock-outline
 ;IconClock=[\xf150]
 
+;mdi-calendar
+;IconClock=[\xf0ed]
+
 ;mdi-floppy
 ;IconDrive=[\xf249]
 
 ;mdi-database
 ;IconDrive=[\xf1b8]
 
-;mdi-texture
-;IconGraphic=[\xf50c]
+;mdi-memory
+;IconGraphic=[\xf35b]
 
 ;mdi-buffer
 ;IconMemory=[\xf619]
