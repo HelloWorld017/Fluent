@@ -11,8 +11,11 @@ IconDrive=[\xf2ca]
 ;mdi-texture
 IconGraphic=[\xf50c]
 
+;mdi-headphones
+IconMedia=[\xf2cb]
+
 ;mdi-package-variant
-IconMemory=[\f3d6]
+IconMemory=[\xf3d6]
 
 ;mdi-wifi-strength-4
 IconNetwork=[\xf927]
@@ -44,6 +47,9 @@ IconUptime=[\xf51b]
 
 ;mdi-memory
 ;IconGraphic=[\xf35b]
+
+;mdi-music
+;IconMedia=[\xf759]
 
 ;mdi-buffer
 ;IconMemory=[\xf619]

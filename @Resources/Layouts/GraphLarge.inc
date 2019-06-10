@@ -55,7 +55,7 @@ Y=10R
 FontSize=11
 FontFace=#TextFont#
 FontWeight=100
-FontColor=255,255,255,255
+FontColor=#TextColor#f0
 StringAlign=LeftCenter
 DynamicVariables=1
 AntiAlias=1
@@ -71,29 +71,35 @@ Y=0r
 Meter=String
 MeasureName=MeasureTop1
 MeterStyle=StyleList
+;FontColor=#TextColor#ff
 Y=(#Height# * 0.6)
 
 [MeterTop1Value]
 Meter=String
 MeterStyle=StyleList | StyleListValue
+;FontColor=#TextColor#ff
 Text=[MeasureTop1:1]%
 
 [MeterTop2Name]
 Meter=String
 MeasureName=MeasureTop2
 MeterStyle=StyleList
+;FontColor=#TextColor#a0
 
 [MeterTop2Value]
 Meter=String
 MeterStyle=StyleList | StyleListValue
+;FontColor=#TextColor#a0
 Text=[MeasureTop2:1]%
 
 [MeterTop3Name]
 Meter=String
 MeasureName=MeasureTop3
 MeterStyle=StyleList
+;FontColor=#TextColor#80
 
 [MeterTop3Value]
 Meter=String
 MeterStyle=StyleList | StyleListValue
+;FontColor=#TextColor#80
 Text=[MeasureTop3:1]%
