@@ -1,0 +1,3 @@
+[*.lua]
+charset=utf-16le
+indent_style=tab
