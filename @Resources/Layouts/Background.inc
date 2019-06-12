@@ -11,15 +11,13 @@ BlurEnabled=1
 Meter=Shape
 X=0
 Y=0
-Shape=Path Path | Fill Color #BackgroundColor# | StrokeWidth 0
-Path=0,0 | LineTo #Width#,0 | LineTo #Width#,#Height# | LineTo 0,#Height# | ClosePath 1
+Shape=Rectangle 0,0,#Width#,#Height# | Fill Color #BackgroundColor# | StrokeWidth 0
 
 [MeterLabel]
 Meter=Shape
 X=0
 Y=#LabelY#
-Shape=Path Path | Fill Color #LabelColor# | StrokeWidth 0
-Path = 0,0 | LineTo #LabelHeight#,0 | LineTo #LabelHeight#,#LabelHeight# | LineTo 0,#LabelHeight# | ClosePath 1
+Shape=Rectangle 0,0,#LabelHeight#,#LabelHeight# | Fill Color #LabelColor# | StrokeWidth 0
 
 [MeterIcon]
 Meter=String

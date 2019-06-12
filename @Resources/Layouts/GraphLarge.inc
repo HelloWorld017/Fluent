@@ -14,7 +14,7 @@ Plugin=UsageMonitor
 Blacklist=#UsageBlacklist#
 Alias=#GraphAlias#
 Index=1
-Substitute="":"---"
+Substitute="":"No Entries"
 
 [MeasureTop2]
 Measure=Plugin
@@ -22,7 +22,7 @@ Plugin=UsageMonitor
 Blacklist=#UsageBlacklist#
 Alias=#GraphAlias#
 Index=2
-Substitute="":"---"
+Substitute="":"No Entries"
 
 [MeasureTop3]
 Measure=Plugin
@@ -30,23 +30,7 @@ Plugin=UsageMonitor
 Blacklist=#UsageBlacklist#
 Alias=#GraphAlias#
 Index=3
-Substitute="":"---"
-
-[MeasureTop4]
-Measure=Plugin
-Plugin=UsageMonitor
-Blacklist=#UsageBlacklist#
-Alias=#GraphAlias#
-Index=4
-Substitute="":"---"
-
-[MeasureTop5]
-Measure=Plugin
-Plugin=UsageMonitor
-Blacklist=#UsageBlacklist#
-Alias=#GraphAlias#
-Index=5
-Substitute="":"---"
+Substitute="":"No Entries"
 
 ; ================= DEFAULT STYLES ==================
 [StyleList]
@@ -71,14 +55,14 @@ Y=0r
 Meter=String
 MeasureName=MeasureTop1
 MeterStyle=StyleList
-;FontColor=#TextColor#ff
 Y=(#Height# * 0.6)
+;FontColor=#TextColor#ff
 
 [MeterTop1Value]
 Meter=String
 MeterStyle=StyleList | StyleListValue
+Text=[MeasureTop1:1]
 ;FontColor=#TextColor#ff
-Text=[MeasureTop1:1]%
 
 [MeterTop2Name]
 Meter=String
@@ -89,8 +73,8 @@ MeterStyle=StyleList
 [MeterTop2Value]
 Meter=String
 MeterStyle=StyleList | StyleListValue
+Text=[MeasureTop2:1]
 ;FontColor=#TextColor#a0
-Text=[MeasureTop2:1]%
 
 [MeterTop3Name]
 Meter=String
@@ -101,5 +85,5 @@ MeterStyle=StyleList
 [MeterTop3Value]
 Meter=String
 MeterStyle=StyleList | StyleListValue
+Text=[MeasureTop3:1]
 ;FontColor=#TextColor#80
-Text=[MeasureTop3:1]%

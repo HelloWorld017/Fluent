@@ -31,8 +31,6 @@ MediaMode=WebNowPlaying
 ; Uncomment when MediaMode=NowPlaying
 ; PlayerName=CAD
 
-HideCoverIcon=1
-
 ; =================== DRIVE SKIN ===================
 Drive1=C:
 Drive2=G:

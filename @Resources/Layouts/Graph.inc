@@ -12,7 +12,7 @@ OutputGraph=MeterGraph
 [MeterGraph]
 Meter=Shape
 X=(#LabelHeight# * 1.25)
-Y=(#Height# * 0.75)
+Y=(#Height# * 0.875)
 Shape=Path Graph1 | StrokeWidth 3 | Stroke Color #GraphColor# | StrokeLineJoin Round
 Shape2=Path Graph2 | StrokeWidth 0 | Fill LinearGradient Grad | StrokeLineJoin Round
 Graph1=0,0|Lineto 0,0
