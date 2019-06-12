@@ -38,6 +38,14 @@ Drive2=G:
 ; MB/s, For drawing plot
 MaxDriveSpeed=20
 
+; ================== NETWORK SKIN ==================
+PingServer=www.google.com
+PingLow=30
+PingHigh=100
+
+; Mbps, For drawing plot
+MaxNetworkSpeed=100
+
 ; ================== WEATHER SKIN ==================
 LocationCode=KSXX0027
 Unit=m
