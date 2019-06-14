@@ -6,7 +6,7 @@ BarCaptionDeltaY=0
 BarCount=1
 BarHeight=5
 BarGap=0
-@IncludeBar=#@#/Layouts/Bar1.inc
+@IncludeBar=#@#/Layouts/Bars/Bar1.inc
 @IncludeMedia=#@#Media/#MediaMode#.inc
 
 [StyleMediaText]

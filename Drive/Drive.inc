@@ -6,7 +6,7 @@ BarCaptionDeltaY=10
 BarCount=2
 BarHeight=5
 BarGap=0
-@IncludeBar=#@#Layouts/Bar2.inc
+@IncludeBar=#@#Layouts/Bars/Bar2.inc
 
 ; ================= DRIVE 1 MEASURE =================
 [MeasureDrive1Used]

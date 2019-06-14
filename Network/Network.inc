@@ -1,3 +1,6 @@
+[Variables]
+@Include=#@#Default.inc
+
 [MeasureNetDownload]
 Measure=NetIn
 
@@ -8,12 +11,5 @@ Measure=NetOut
 Measure=NetTotal
 MaxValue=(#MaxNetworkSpeed# * 1024 * 1024)
 
-[MeasureGraph]
-Measure=Calc
-Formula=[MeasureNetTotal:%]
-DynamicVariables=1
-
-[MeterGraphText]
-MeasureName=MeasureNetTotal
-Text=%1B/s
-AutoScale=1
+[MeterIcon]
+Text=#IconNetwork#

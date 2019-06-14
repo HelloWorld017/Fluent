@@ -2,6 +2,8 @@
 LabelYMax=30
 LabelHeight=80
 LabelOffset=2
-@IncludeBackground=Layouts/Background.inc
 @IncludeVariables=Variables.inc
+@IncludeTheme=Themes/#Theme#.inc
+@IncludeThemeBackground=Themes/Background/#ThemeBackground#.inc
+@IncludeBackground=Layouts/Background.inc
 @IncludeIcons=Icons.inc
