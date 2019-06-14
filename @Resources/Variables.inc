@@ -82,4 +82,12 @@ UptimeMode=Sysinfo
 
 ; ================== WEATHER SKIN ==================
 LocationCode=KSXX0027
+
+ShowHumidity=0
+
 WeatherUnit=m
+WeatherUnitText=[\x2103]
+
+; For Fahrenheit users, please comment default values and uncomment these
+; WeatherUnit=s
+; WeatherUnitText=[\x2109]
