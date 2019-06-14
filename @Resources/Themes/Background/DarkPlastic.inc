@@ -1,0 +1,7 @@
+[Variables]
+BackgroundColor=202020
+GraphTextColor=f0f0f090
+TextColor=f1f2f3
+BarBackgroundColor=20202050
+BarTextColor=f0f0f0f0
+BarCaptionTextColor=a0a0a0f0
