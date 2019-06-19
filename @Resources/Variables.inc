@@ -5,8 +5,8 @@
 
 
 ; ===================== THEME ======================
-Theme=Magenta
-ThemeBackground=Dark
+Theme=Cyan
+ThemeBackground=DarkGlass
 
 TextFont=Noto Sans CJK KR Regular
 IconFont=Material Design Icons

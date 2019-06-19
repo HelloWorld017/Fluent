@@ -1,6 +1,5 @@
 [MeasureState]
-Measure=Plugin
-Plugin=NowPlaying
+Measure=NowPlaying
 Playername=Spotify
 PlayerType=State
 

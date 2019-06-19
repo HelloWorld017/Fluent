@@ -1,12 +1,6 @@
 [Variables]
 LabelY=(#Height# - #LabelYMax# * 2 < #LabelHeight# ? (#Height# - #LabelHeight#) / 2 : #LabelYMax#)
 
-[BlurBehind]
-Measure=Plugin
-Plugin=FrostedGlass
-UpdateDivider=-1
-BlurEnabled=1
-
 [MeterBackground]
 Meter=Shape
 X=0

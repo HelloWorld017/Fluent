@@ -54,8 +54,7 @@ Substitute="":"N/A"
 UpdateDivider=-1
 
 [MeasureExternalIP]
-Measure=Plugin
-Plugin=WebParser
+Measure=WebParser
 UpdateRate=21600
 Url=http://checkip.dyndns.org:8245
 RegExp="(?siU)Address: (.*)</body>"
