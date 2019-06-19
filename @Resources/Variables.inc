@@ -8,7 +8,7 @@
 Theme=Cyan
 ThemeBackground=DarkGlass
 
-TextFont=Noto Sans CJK KR Regular
+TextFont=Noto Sans KR
 IconFont=Material Design Icons
 
 ; ================= USAGE MONITOR ==================
