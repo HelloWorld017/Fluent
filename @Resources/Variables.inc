@@ -43,7 +43,10 @@ PingHigh=100
 MaxNetworkSpeed=100
 
 ; ================ TEMPERATURE SKIN ================
+; You should run Remote Web Server in OpenHardwareMonitor
+; I recommend you to use LibreHardwareMonitor as it supports Ryzen and more updated
 OHMPort=8085
+
 ThermoMin=30
 ThermoMax=55
 
