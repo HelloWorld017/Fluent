@@ -1,44 +1,44 @@
-[MeasureState]
+[GooglePlayMusicMeasureState]
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=State
 
-[MeasureStateButton]
+[GooglePlayMusicMeasureStateButton]
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=State
 Substitute="0":"Play","1":"Pause","2":"Play"
 
-[MeasureTrack]
+[GooglePlayMusicMeasureTrack]
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=Title
 Substitute="":"#NoTrackNameText#"
 
-[MeasureArtist]
+[GooglePlayMusicMeasureArtist]
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=Artist
 Substitute="":"#NoArtistNameText#"
 
-[MeasureCover]
+[GooglePlayMusicMeasureCover]
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=Cover
 CoverPath=#@#Covers\GooglePlayMusic.png
 Substitute="":"#@#Images\nocover.png"
 
-[MeasurePosition]
+[GooglePlayMusicMeasurePosition]
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=Position
 
-[MeasureDuration]
+[GooglePlayMusicMeasureDuration]
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=Duration
 
-[MeasureProgress]
+[GooglePlayMusicMeasureProgress]
 Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=Progress

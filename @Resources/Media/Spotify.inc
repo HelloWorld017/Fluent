@@ -1,54 +1,48 @@
-[MeasureState]
+[SpotifyMeasureState]
 Measure=NowPlaying
 Playername=Spotify
 PlayerType=State
 
-[MeasureStateButton]
+[SpotifyMeasureStateButton]
 Measure=Plugin
 Plugin=SpotifyPlugin
 Type=Playing
 Substitute="0":"Play","1":"Pause","2":"Play"
 
-[MeasureTrack]
+[SpotifyMeasureTrack]
 Measure=Plugin
 Plugin=SpotifyPlugin
 Type=TrackName
 Substitute="":"#NoTrackNameText#"
 
-[MeasureArtist]
+[SpotifyMeasureArtist]
 Measure=Plugin
 Plugin=SpotifyPlugin
 Type=ArtistName
 Substitute="":"#NoArtistNameText#"
 
-[MeasureAlbum]
-Measure=Plugin
-Plugin=SpotifyPlugin
-Type=AlbumName
-Substitute="":"#NoArtistNameText#"
-
-[MeasureCover]
+[SpotifyMeasureCover]
 Measure=Plugin
 Plugin=SpotifyPlugin
 Type=AlbumArt
 Res=120
 CoverPath=#@#Covers\Spotify.png
 
-[MeasurePosition]
+[SpotifyMeasurePosition]
 Measure=Plugin
 Plugin=SpotifyPlugin
 Type=Position
 
-[MeasureDuration]
+[SpotifyMeasureDuration]
 Measure=Plugin
 Plugin=SpotifyPlugin
 Type=Length
 
-[MeasureProgressPrecent]
+[SpotifyMeasureProgressPrecent]
 Measure=Plugin
 Plugin=SpotifyPlugin
 Type=Progress
 
-[MeasureProgress]
+[SpotifyMeasureProgress]
 Measure=Calc
 Formula=MeasureProgressPrecent*100

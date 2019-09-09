@@ -17,10 +17,15 @@ UsageBlacklist=_Total|Idle|dwm|wmpnetwk|csrss|svchost|lsass|System|system|Memory
 
 ; =================== MEDIA SKIN ===================
 ; GooglePlayMusic, NowPlaying, Spotify, WebNowPlaying, PotPlayer
-MediaMode=PotPlayer
+MediaOrderCount=2
+MediaOrder1=PotPlayer
+MediaOrder2=WebNowPlaying
+MediaOrder3=None
+MediaOrder4=None
+MediaOrder5=None
 
-; Uncomment when MediaMode=NowPlaying
-; PlayerName=CAD
+; NowPlayingName
+PlayerName=CAD
 
 HideCoverIcon=0
 

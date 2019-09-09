@@ -7,7 +7,12 @@ BarCount=1
 BarHeight=5
 BarGap=0
 @IncludeBar=#@#/Layouts/Bars/Bar1.inc
-@IncludeMedia=#@#Media/#MediaMode#.inc
+@IncludeMedia=#@#Media/Combined.inc
+@IncludeMediaOrder1=#@#Media/#MediaOrder1#.inc
+@IncludeMediaOrder2=#@#Media/#MediaOrder2#.inc
+@IncludeMediaOrder3=#@#Media/#MediaOrder3#.inc
+@IncludeMediaOrder4=#@#Media/#MediaOrder4#.inc
+@IncludeMediaOrder5=#@#Media/#MediaOrder5#.inc
 
 [StyleMediaText]
 FontColor=#TextColor#
@@ -70,7 +75,7 @@ MeterStyle=StyleMediaButton
 X=(#LabelHeight# + (#Width# - #LabelHeight#) / 4)
 Y=35R
 Text=[\xf4ae]
-LeftMouseUpAction=[!CommandMeasure MeasureState "Previous"]
+LeftMouseUpAction=[!CommandMeasure MeasureState "Execute('Previous')"]
 
 [MeterControlsPlayPause]
 Meter=String
@@ -78,7 +83,7 @@ MeterStyle=StyleMediaButton
 X=(#LabelHeight# + (#Width# - #LabelHeight#) / 4 * 2)
 Y=0r
 Text=[\xf40e]
-LeftMouseUpAction=[!CommandMeasure MeasureState "PlayPause"]
+LeftMouseUpAction=[!CommandMeasure MeasureState "Execute('PlayPause')"]
 
 [MeterControlsNext]
 Meter=String
@@ -86,4 +91,4 @@ MeterStyle=StyleMediaButton
 X=(#LabelHeight# + (#Width# - #LabelHeight#) / 4 * 3)
 Y=0r
 Text=[\xf4ad]
-LeftMouseUpAction=[!CommandMeasure MeasureState "Next"]
+LeftMouseUpAction=[!CommandMeasure MeasureState "Execute('Next')"]
