@@ -3,12 +3,6 @@ Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=State
 
-[WebNowPlayingMeasureStateButton]
-Measure=Plugin
-Plugin=WebNowPlaying
-PlayerType=State
-Substitute="0":"Play","1":"Pause","2":"Play"
-
 [WebNowPlayingMeasureTrack]
 Measure=Plugin
 Plugin=WebNowPlaying

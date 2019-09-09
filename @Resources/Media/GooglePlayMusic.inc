@@ -3,12 +3,6 @@ Measure=Plugin
 Plugin=GPMDPPlugin
 PlayerInfo=State
 
-[GooglePlayMusicMeasureStateButton]
-Measure=Plugin
-Plugin=GPMDPPlugin
-PlayerInfo=State
-Substitute="0":"Play","1":"Pause","2":"Play"
-
 [GooglePlayMusicMeasureTrack]
 Measure=Plugin
 Plugin=GPMDPPlugin

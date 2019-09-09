@@ -3,12 +3,6 @@ Measure=Plugin
 Plugin=RainmeterPot
 PlayerType=State
 
-[PotPlayerMeasureStateButton]
-Measure=Plugin
-Plugin=RainmeterPot
-PlayerType=State
-Substitute="0":"Play","1":"Pause","2":"Play"
-
 [PotPlayerMeasureTrack]
 Measure=Plugin
 Plugin=RainmeterPot

@@ -3,12 +3,6 @@ Measure=NowPlaying
 PlayerName=#PlayerName#
 PlayerType=State
 
-[NowPlayingMeasureStateButton]
-Measure=NowPlaying
-PlayerName=#PlayerName#
-PlayerType=STATE
-Substitute="0":"Play","1":"Pause","2":"Play"
-
 [NowPlayingMeasureTrack]
 Measure=NowPlaying
 PlayerName=#PlayerName#

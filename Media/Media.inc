@@ -37,7 +37,7 @@ MeasureName=MeasureTrack
 
 [MeasureBar1]
 Measure=Calc
-Formula=([MeasurePosition:] / ([MeasureDuration:] > 0 ? [MeasureDuration:] : 0.001))
+Formula=#VariableProgress# / 100
 DynamicVariables=1
 
 [MeterTrack]
@@ -53,21 +53,21 @@ H=(#LabelHeight# * 0.35)
 [MeterArtist]
 Meter=String
 MeterStyle=StyleMediaText
-MeasureName=MeasureArtist
+Text=#VariableArtist#
 FontSize=10
 X=(#LabelHeight# * 1.25)
 Y=(#LabelY# + #LabelHeight# * 0.5)
 W=(#Width# - #LabelHeight# * 1.5)
 H=(#LabelHeight# * 0.25)
+DynamicVariables=1
 
 [MeterBar1]
 Y=20R
 
 [MeterBarCaptionText1]
-MeasureName=MeasurePosition
-MeasureName2=MeasureDuration
-Text=%1 / %2
+Text=#VariablePosition# / #VariableDuration#
 Y=-15R
+DynamicVariables=1
 
 [MeterControlsPrev]
 Meter=String
@@ -75,7 +75,7 @@ MeterStyle=StyleMediaButton
 X=(#LabelHeight# + (#Width# - #LabelHeight#) / 4)
 Y=35R
 Text=[\xf4ae]
-LeftMouseUpAction=[!CommandMeasure MeasureState "Execute('Previous')"]
+LeftMouseUpAction=[!CommandMeasure MeasureCombine "Execute('Previous')"]
 
 [MeterControlsPlayPause]
 Meter=String
@@ -83,7 +83,7 @@ MeterStyle=StyleMediaButton
 X=(#LabelHeight# + (#Width# - #LabelHeight#) / 4 * 2)
 Y=0r
 Text=[\xf40e]
-LeftMouseUpAction=[!CommandMeasure MeasureState "Execute('PlayPause')"]
+LeftMouseUpAction=[!CommandMeasure MeasureCombine "Execute('PlayPause')"]
 
 [MeterControlsNext]
 Meter=String
@@ -91,4 +91,4 @@ MeterStyle=StyleMediaButton
 X=(#LabelHeight# + (#Width# - #LabelHeight#) / 4 * 3)
 Y=0r
 Text=[\xf4ad]
-LeftMouseUpAction=[!CommandMeasure MeasureState "Execute('Next')"]
+LeftMouseUpAction=[!CommandMeasure MeasureCombine "Execute('Next')"]

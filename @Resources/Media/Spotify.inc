@@ -3,12 +3,6 @@ Measure=NowPlaying
 Playername=Spotify
 PlayerType=State
 
-[SpotifyMeasureStateButton]
-Measure=Plugin
-Plugin=SpotifyPlugin
-Type=Playing
-Substitute="0":"Play","1":"Pause","2":"Play"
-
 [SpotifyMeasureTrack]
 Measure=Plugin
 Plugin=SpotifyPlugin
