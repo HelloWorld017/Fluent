@@ -5,7 +5,7 @@
 
 
 ; ===================== THEME ======================
-Theme=Cyan
+Theme=Light
 ThemeBackground=DarkGlass
 
 TextFont=Noto Sans KR
@@ -16,8 +16,8 @@ IconFont=Material Design Icons
 UsageBlacklist=_Total|Idle|dwm|wmpnetwk|csrss|svchost|lsass|System|system|Memory Compression|wininit|RemindersServer|spoolsv|IpOverUsbSvc|WmiPrvSE
 
 ; =================== MEDIA SKIN ===================
-; GooglePlayMusic, NowPlaying, Spotify, WebNowPlaying
-MediaMode=WebNowPlaying
+; GooglePlayMusic, NowPlaying, Spotify, WebNowPlaying, PotPlayer
+MediaMode=PotPlayer
 
 ; Uncomment when MediaMode=NowPlaying
 ; PlayerName=CAD
