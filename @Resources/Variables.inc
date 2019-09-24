@@ -23,6 +23,7 @@ MediaOrder2=WebNowPlaying
 MediaOrder3=None
 MediaOrder4=None
 MediaOrder5=None
+MediaMaxTitleLength=32
 
 ; NowPlayingName
 PlayerName=CAD

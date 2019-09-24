@@ -7,11 +7,6 @@ VariablePosition=
 VariableDuration=
 VariableProgress=
 
-[MeasureTrack]
-Measure=String
-String=#VariableTrack#
-DynamicVariables=1
-
 [MeasureCombine]
 Measure=Script
 ScriptFile=#@#Scripts\MediaCombine.lua
@@ -21,3 +16,4 @@ Order2=#MediaOrder2#
 Order3=#MediaOrder3#
 Order4=#MediaOrder4#
 Order5=#MediaOrder5#
+MaxLength=#MediaMaxTitleLength#

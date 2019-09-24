@@ -30,11 +30,6 @@ H=25
 StringAlign=CenterCenter
 AntiAlias=1
 
-[MeasureTrackBreak]
-Measure=Script
-ScriptFile=#@#Scripts/WordBreak.lua
-MeasureName=MeasureTrack
-
 [MeasureBar1]
 Measure=Calc
 Formula=#VariableProgress# / 100
@@ -43,7 +38,7 @@ DynamicVariables=1
 [MeterTrack]
 Meter=String
 MeterStyle=StyleMediaText
-MeasureName=MeasureTrackBreak
+MeasureName=MeasureCombine
 FontSize=14
 X=(#LabelHeight# * 1.25)
 Y=(#LabelY# + #LabelHeight# * 0.1)
