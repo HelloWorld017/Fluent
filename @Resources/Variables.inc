@@ -16,7 +16,7 @@ IconFont=Material Design Icons
 UsageBlacklist=_Total|Idle|dwm|wmpnetwk|csrss|svchost|lsass|System|system|Memory Compression|wininit|RemindersServer|spoolsv|IpOverUsbSvc|WmiPrvSE
 
 ; =================== MEDIA SKIN ===================
-; GooglePlayMusic, NowPlaying, Spotify, WebNowPlaying, PotPlayer
+; GooglePlayMusic, NowPlaying, WebNowPlaying, PotPlayer
 MediaOrderCount=2
 MediaOrder1=PotPlayer
 MediaOrder2=WebNowPlaying
@@ -90,7 +90,10 @@ UptimeMode=Sysinfo
 ; UptimeMode=Default
 
 ; ================== WEATHER SKIN ==================
-LocationCode=KSXX0027
+LocationCode=Daejeon, KR
+
+; You can get an OpenWeather AppId from https://openweathermap.org/appid
+WeatherAppId=0123456789abcdef0123456789abcdef
 
 ShowHumidity=0
 
