@@ -1,0 +1,8 @@
+[Variables]
+BackgroundColorPrimary=202020#BackgroundColorOpacity#
+BackgroundColorSecondary=20202050
+BackgroundColorInput=202020
+TextColorPrimary=f0f0f0
+TextColorSecondary=f0f0f090
+TextColorTertiary=f0f0f060
+@IncludeThemeCommon=Common.inc

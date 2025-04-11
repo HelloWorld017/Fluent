@@ -2,14 +2,19 @@
 ; ==================================================
 ; |                FLUENT VARIABLES                |
 ; ==================================================
-
+Width=300
+Multiplier=1.5
 
 ; ===================== THEME ======================
 Theme=Light
-ThemeBackground=DarkGlass
+ThemeBackground=DarkMica
 
-TextFont=Noto Sans KR
+TextFont=Pretendard JP
 IconFont=Material Design Icons
+
+; =================== ORGANIZER ====================
+Organizer=18,U,R
+OrganizerEnabled=0
 
 ; ================= USAGE MONITOR ==================
 ; This processes are not shown on the process list like CoreLarge.
@@ -17,9 +22,9 @@ UsageBlacklist=_Total|Idle|dwm|wmpnetwk|csrss|svchost|lsass|System|system|Memory
 
 ; =================== MEDIA SKIN ===================
 ; GooglePlayMusic, NowPlaying, WebNowPlaying, PotPlayer
-MediaOrderCount=2
-MediaOrder1=PotPlayer
-MediaOrder2=WebNowPlaying
+MediaOrderCount=1
+MediaOrder1=WebNowPlaying
+MediaOrder2=None
 MediaOrder3=None
 MediaOrder4=None
 MediaOrder5=None

@@ -4,15 +4,15 @@ OnUpdateAction=[!CommandMeasure ScriptGraph "Graph()"]
 [ScriptGraph]
 Measure=Script
 ScriptFile=#@#Scripts\GraphShape.lua
-ShapeWidth=(#Width# - #LabelHeight# * 1.5)
-ShapeHeight=(#Height# * 0.70)
+ShapeWidth=(#_Width# - #_HeaderLeft# - #_HeaderRight#)
+ShapeHeight=(#_Height# - #_HeaderTop# - #_HeaderBottom#)
 InputMeasure=MeasureGraph
 OutputGraph=MeterGraph
 
 [MeterGraph]
 Meter=Shape
-X=(#LabelHeight# * 1.25)
-Y=(#Height# * 0.85)
+X=#_HeaderLeft#
+Y=(#_Height# - #_HeaderBottom#)
 Shape=Path Graph1 | StrokeWidth 3 | Stroke Color #GraphColor# | StrokeLineJoin Round
 Shape2=Path Graph2 | StrokeWidth 0 | Fill LinearGradient Grad | StrokeLineJoin Round
 Graph1=0,0|Lineto 0,0
@@ -24,9 +24,9 @@ Padding=0,0,0,(10)
 Meter=String
 FontFace=#TextFont#
 FontColor=#GraphTextColor#
-FontSize=15
-FontWeight=100
+FontSize=(15 * #Multiplier#)
+FontWeight=500
 StringAlign=RightTop
 AntiAlias=1
-X=(#Width# - #LabelHeight# * 0.25)
-Y=(#Height# * 0.1)
+X=(#_Width# - #_HeaderRight#)
+Y=#_HeaderTop# - (8 * #Multiplier#)

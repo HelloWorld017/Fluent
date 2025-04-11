@@ -1,12 +1,20 @@
 [Variables]
 @IncludeNetwork=Network.inc
+ItemsOffsetY = 10
+ItemGap = 40
+RowGap = 20
+IconOffsetY = 8
+_ItemsOffsetY = (#ItemsOffsetY# * #Multiplier#)
+_ItemGap = (#ItemGap# * #Multiplier#)
+_RowGap = (#RowGap# * #Multiplier#)
+_IconOffsetY = (#IconOffsetY# * #Multiplier#)
 
 ; ===================== STYLES =====================
 [StyleNetworkLabel]
 FontFace=#TextFont#
-FontSize=10
-FontColor=#TextColor#c0
-FontWeight=400
+FontSize=(10 * #Multiplier#)
+FontColor=#TextColorSecondary#
+FontWeight=500
 StringAlign=RightTop
 AntiAlias=1
 
@@ -82,9 +90,9 @@ MeasureName=MeasureNetDownload
 ; ================== PING METERS ===================
 [MeterPingBackground]
 Meter=Shape
-Shape=Rectangle 0,0,60,30 | Fill Color #LabelColor#[MeasureQuotientAlpha][MeasureRemainderAlpha] | StrokeWidth 0
+Shape=Rectangle 0,0,(60 * #Multiplier#),(30 * #Multiplier#) | Fill Color #LabelColor#[MeasureQuotientAlpha][MeasureRemainderAlpha] | StrokeWidth 0
 X=0
-Y=(#Height# - 50)
+Y=(#_Height# - 60 * #Multiplier#)
 DynamicVariables=1
 
 [MeterPing]
@@ -93,23 +101,24 @@ MeasureName=MeasurePing
 FontFace=#TextFont#
 FontColor=#IconColor#
 FontWeight=500
+FontSize=(8 * #Multiplier#)
 StringAlign=CenterCenter
 AntiAlias=1
 Text=%1 ms
-X=30
-Y=(#Height# - 35)
+X=(30 * #Multiplier#)
+Y=(#_Height# - 45 * #Multiplier#)
 
 ; ================ UPLOAD METERS ===================
 [MeterIconUpload]
 Meter=String
 FontFace=#IconFont#
 FontColor=#TextColor#
-FontSize=16
+FontSize=(16 * #Multiplier#)
 StringAlign=LeftTop
 Text=[\xf552]
 AntiAlias=1
-X=(#LabelHeight# * 1.25)
-Y=(#LabelY#)
+X=(#_HeaderLeft#)
+Y=(#_HeaderTop# + #_ItemsOffsetY# + #_IconOffsetY#)
 
 [MeterUpload]
 Meter=String
@@ -117,8 +126,8 @@ MeasureName=MeasureNetUpload
 MeterStyle=StyleNetworkLabel
 Text=%1B/s
 AutoScale=1
-X=(#Width# - #LabelHeight# * 0.25)
-Y=(#LabelY#)
+X=(#_Width# - #_HeaderRight#)
+Y=(-#IconOffsetY#)r
 
 [MeterUploadTotal]
 Meter=String
@@ -127,19 +136,19 @@ MeterStyle=StyleNetworkLabel
 Text=%1B
 AutoScale=1
 X=0r
-Y=20r
+Y=(#_RowGap#)r
 
 ; ================ DOWNLOAD METERS =================
 [MeterIconDownload]
 Meter=String
 FontFace=#IconFont#
 FontColor=#TextColor#
-FontSize=16
+FontSize=(16 * #Multiplier#)
 StringAlign=LeftTop
 Text=[\xf1da]
 AntiAlias=1
-X=(#LabelHeight# * 1.25)
-Y=40r
+X=(#_HeaderLeft#)
+Y=(#_ItemGap# + #_IconOffsetY#)r
 
 [MeterDownload]
 Meter=String
@@ -147,8 +156,8 @@ MeasureName=MeasureNetDownload
 MeterStyle=StyleNetworkLabel
 Text=%1B/s
 AutoScale=1
-X=(#Width# - #LabelHeight# * 0.25)
-Y=0r
+X=(#_Width# - #_HeaderRight#)
+Y=(-#_IconOffsetY#)r
 
 [MeterDownloadTotal]
 Meter=String
@@ -157,32 +166,32 @@ MeterStyle=StyleNetworkLabel
 Text=%1B
 AutoScale=1
 X=0r
-Y=20r
+Y=(#_RowGap#)r
 
 ; ================== IP METERS =====================
 [MeterIP]
 Meter=String
 FontFace=#TextFont#
 FontColor=#TextColor#
-FontSize=16
+FontSize=(16 * #Multiplier#)
 StringAlign=LeftTop
 Text=IP
 AntiAlias=1
-X=(#LabelHeight# * 1.25)
-Y=40r
+X=(#_HeaderLeft#)
+Y=(#_ItemGap# + #_IconOffsetY#)r
 
 [MeterIPLocal]
 Meter=String
 MeterStyle=StyleNetworkLabel
 MeasureName=MeasureLocalIP
 Text=%1
-X=(#Width# - (#LabelHeight# * 0.25))
-Y=0r
+X=(#_Width# - #_HeaderRight#)
+Y=(-#_IconOffsetY#)r
 
 [MeterIPExternal]
 Meter=String
 MeterStyle=StyleNetworkLabel
 MeasureName=MeasureExternalIP
 Text=%1
-X=(#Width# - (#LabelHeight# * 0.25))
-Y=20r
+X=0r
+Y=(#_RowGap#)r

@@ -1,5 +1,4 @@
 [Variables]
-Width=300
 @Include=#@#Default.inc
 @IncludeText=#@#Layouts/Text.inc
 
@@ -22,7 +21,7 @@ MeasureName=MeasureTime
 MeasureName2=MeasureDate
 Text=%1#CRLF#%2
 StringAlign=LeftCenter
-X=(#LabelHeight# + 20)
+X=#_HeaderLeft#
 InlinePattern=^(.*)\n
 InlinePattern2=^(.*)\n
 InlineSetting2=Weight | 600

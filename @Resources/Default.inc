@@ -1,7 +1,4 @@
 [Variables]
-LabelYMax=30
-LabelHeight=80
-LabelOffset=2
 Version=1.11
 
 @IncludeVariables=Variables.inc
@@ -9,3 +6,8 @@ Version=1.11
 @IncludeThemeBackground=Themes/Background/#ThemeBackground#.inc
 @IncludeBackground=Layouts/Background.inc
 @IncludeIcons=Icons.inc
+
+[MeasureOrganizer]
+Measure=Script
+ScriptFile=#@#Scripts/Organizer.lua
+Disabled=(#OrganizerEnabled# = 1 ? 0 : 1)

@@ -1,11 +1,16 @@
 [Variables]
 @Include=Graph.inc
+GraphSize=(#HeaderHeight# - #HeaderTop# - #HeaderBottom#)
+_GraphSize=(#GraphSize# * #Multiplier#)
 
 [ScriptGraph]
-ShapeHeight=(#Height# * 0.35)
+ShapeHeight=#_GraphSize#
 
 [MeterGraph]
-Y=(#Height# * 0.45)
+Y=(#_GraphSize# + #_Padding#)
+
+[MeterGraphText]
+Y=#_HeaderTop#
 
 ; ================== LIST MEASURE ==================-
 [MeasureTop1]
@@ -34,11 +39,11 @@ Substitute="":"No Entries"
 
 ; ================= DEFAULT STYLES ==================
 [StyleList]
-X=(#Width# * 0.1)
-Y=10R
-FontSize=11
+X=#_BodyLeft#
+Y=(15 * #Multiplier#)R
+FontSize=(11 * #Multiplier#)
 FontFace=#TextFont#
-FontWeight=100
+FontWeight=400
 FontColor=#TextColor#f0
 StringAlign=LeftCenter
 DynamicVariables=1
@@ -47,7 +52,7 @@ AntiAlias=1
 [StyleListValue]
 FontWeight=800
 StringAlign=RightCenter
-X=(#Width# * 0.9)
+X=(#_Width# - #_BodyRight#)
 Y=0r
 
 ; ================= PROCESS METERS ==================
@@ -55,7 +60,7 @@ Y=0r
 Meter=String
 MeasureName=MeasureTop1
 MeterStyle=StyleList
-Y=(#Height# * 0.6)
+Y=(#_BodyOffsetY# + #_BodyTop# + 15 * #Multiplier#)
 ;FontColor=#TextColor#ff
 
 [MeterTop1Value]
