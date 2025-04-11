@@ -1,5 +1,5 @@
 [Variables]
-Version=1.11
+Version=2.0
 
 @IncludeVariables=Variables.inc
 @IncludeTheme=Themes/#Theme#.inc
