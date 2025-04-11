@@ -8,7 +8,7 @@ Formula=0
 [MeterBar3]
 Meter=Shape
 Shape=Rectangle 0,0,#_BarWidth#,#_BarHeight#,#_BarRadius# | Fill Color #BarBackgroundColor# | StrokeWidth 0
-Shape2=Rectangle 0,0,(#_BarWidth# * ([MeasureBar1:%]/100)),#_BarHeight#,#_BarRadius# | Fill LinearGradient Grad | StrokeWidth 0
+Shape2=Rectangle 0,0,(#_BarWidth# * ([MeasureBar3:%]/100)),#_BarHeight#,#_BarRadius# | Fill LinearGradient Grad | StrokeWidth 0
 Grad=180 | #BarFirstColor# ; 0 | #BarSecondColor# ; 1
 X=(#_BarDeltaX# + #_HeaderLeft#)
 Y=((#_HeaderTop# + (#_BarContainerHeight# + #_BarGap#) * 2) + (#_BarContainerHeight# - #_BarHeight#) / 2 + #_BarDeltaY#)
