@@ -7,7 +7,12 @@ BarCount=1
 BarHeight=5
 BarGap=0
 @IncludeBar=#@#/Layouts/Bars/Bar1.inc
-@IncludeMedia=#@#Media/#MediaMode#.inc
+@IncludeMedia=#@#Media/Combined.inc
+@IncludeMediaOrder1=#@#Media/#MediaOrder1#.inc
+@IncludeMediaOrder2=#@#Media/#MediaOrder2#.inc
+@IncludeMediaOrder3=#@#Media/#MediaOrder3#.inc
+@IncludeMediaOrder4=#@#Media/#MediaOrder4#.inc
+@IncludeMediaOrder5=#@#Media/#MediaOrder5#.inc
 
 [StyleMediaText]
 FontColor=#TextColor#
@@ -25,20 +30,15 @@ H=(25 * #Multiplier#)
 StringAlign=CenterCenter
 AntiAlias=1
 
-[MeasureTrackBreak]
-Measure=Script
-ScriptFile=#@#Scripts/WordBreak.lua
-MeasureName=MeasureTrack
-
 [MeasureBar1]
 Measure=Calc
-Formula=([MeasurePosition:] / ([MeasureDuration:] > 0 ? [MeasureDuration:] : 0.001))
+Formula=#VariableProgress# / 100
 DynamicVariables=1
 
 [MeterTrack]
 Meter=String
 MeterStyle=StyleMediaText
-MeasureName=MeasureTrackBreak
+MeasureName=MeasureCombine
 FontSize=(14 * #Multiplier#)
 FontWeight=600
 X=(#_HeaderLeft#)
@@ -49,22 +49,22 @@ H=(#_HeaderHeight# * 0.25)
 [MeterArtist]
 Meter=String
 MeterStyle=StyleMediaText
-MeasureName=MeasureArtist
+Text=#VariableArtist#
 FontSize=(10 * #Multiplier#)
 FontColor=#TextColorSecondary#
 X=(#_HeaderLeft#)
 Y=(#_HeaderTop# + #_HeaderHeight# * 0.35)
 W=(#_Width# - #_HeaderLeft# - #_HeaderRight#)
 H=(#_HeaderHeight# * 0.15)
+DynamicVariables=1
 
 [MeterBar1]
 Y=(30 * #Multiplier#)R
 
 [MeterBarCaptionText1]
-MeasureName=MeasurePosition
-MeasureName2=MeasureDuration
-Text=%1 / %2
-Y=(-15 * #Multiplier#)R
+Text=#VariablePosition# / #VariableDuration#
+Y=(-20 * #Multiplier#)R
+DynamicVariables=1
 
 [MeterControlsPrev]
 Meter=String
@@ -72,7 +72,7 @@ MeterStyle=StyleMediaButton
 X=(#_HeaderLeft# + (#_Width# - #_HeaderLeft# - #_HeaderRight#) / 6)
 Y=(45 * #Multiplier#)R
 Text=[\xf4ae]
-LeftMouseUpAction=[!CommandMeasure MeasureState "Previous"]
+LeftMouseUpAction=[!CommandMeasure MeasureCombine "Execute('Previous')"]
 
 [MeterControlsPlayPause]
 Meter=String
@@ -80,7 +80,7 @@ MeterStyle=StyleMediaButton
 X=(#_HeaderLeft# + (#_Width# - #_HeaderLeft# - #_HeaderRight#) / 6 * 3)
 Y=0r
 Text=[\xf40e]
-LeftMouseUpAction=[!CommandMeasure MeasureState "PlayPause"]
+LeftMouseUpAction=[!CommandMeasure MeasureCombine "Execute('PlayPause')"]
 
 [MeterControlsNext]
 Meter=String
@@ -88,4 +88,4 @@ MeterStyle=StyleMediaButton
 X=(#_HeaderLeft# + (#_Width# - #_HeaderLeft# - #_HeaderRight#) / 6 * 5)
 Y=0r
 Text=[\xf4ad]
-LeftMouseUpAction=[!CommandMeasure MeasureState "Next"]
+LeftMouseUpAction=[!CommandMeasure MeasureCombine "Execute('Next')"]
