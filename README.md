@@ -27,5 +27,5 @@ You can change your location and unit in `Fluent/@Resources/Variables.inc`
 https://github.com/user-attachments/assets/c903ff1c-f9aa-439e-b7d8-952007b8a6a9
 
 ## Screenshots
-![ScreenShotMica](https://i.imgur.com/JjmBuzA.png)
+![ScreenShotMica](https://i.imgur.com/58bH5yC.png)
 ![Screenshot](https://i.imgur.com/xNfFbbz.png)
