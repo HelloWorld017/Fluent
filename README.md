@@ -4,6 +4,11 @@ Fluent rainmeter theme, which is inspired from and some source imported from [Sy
 ## Usage
 Please install rmskin from [releases](https://github.com/HelloWorld017/Fluent/releases)
 
+### Hi-DPI
+You can change the `Multiplier` variable in `Fluent/@Resources/Variables.inc` to your DPI.  
+After that, you can force the DPI of Rainmter to be 1.  
+Please refer to [this thread](https://forum.rainmeter.net/viewtopic.php?t=22272).
+
 ### Drive
 You can change the drive letter in `Fluent/@Resources/Variables.inc`
 
