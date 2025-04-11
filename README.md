@@ -1,5 +1,3 @@
-![Screenshot](https://i.imgur.com/xNfFbbz.png)
-
 # Fluent
 Fluent rainmeter theme, which is inspired from and some source imported from [SysDash](https://github.com/marcopixel/SysDash).
 
@@ -19,3 +17,10 @@ I recommend LibreHardwareMonitor as it supports Ryzen and much more updated than
 
 ### Weather
 You can change your location and unit in `Fluent/@Resources/Variables.inc`
+
+### Organizer
+https://github.com/user-attachments/assets/c903ff1c-f9aa-439e-b7d8-952007b8a6a9
+
+## Screenshots
+![ScreenShotMica](https://i.imgur.com/JjmBuzA.png)
+![Screenshot](https://i.imgur.com/xNfFbbz.png)
